@@ -1,5 +1,5 @@
 var alldiv = document.querySelectorAll("div");
-var allparagr = document.querySelector("p");
+var allparagr = document.querySelectorAll("p");
 
 alldiv.forEach((elem) => {
     elem.style.backgroundColor = randColor_div();
