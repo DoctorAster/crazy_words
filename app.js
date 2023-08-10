@@ -12,7 +12,7 @@ allparagr.forEach((elem) => {
 function randColor_div() {
     var r = Math.floor(Math.random() * (15)) + 25,
         g = Math.floor(Math.random() * (15)) + 25,
-        b = Math.floor(Math.random() * (15)) + 25;
+        b = Math.floor(Math.random() * (215)) + 25;
     return '#' + r.toString(16) + g.toString(16) + b.toString(16);
 }
 
