@@ -17,7 +17,7 @@ function randColor_div() {
 }
 
 function randColor_p() {
-    var r = Math.floor(Math.random() * (215)) + 25,
+    var r = Math.floor(Math.random() * (5)) + 25,
         g = Math.floor(Math.random() * (215)) + 25,
         b = Math.floor(Math.random() * (5)) + 5;
     return '#' + r.toString(16) + g.toString(16) + b.toString(16);
