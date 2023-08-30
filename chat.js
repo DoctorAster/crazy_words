@@ -1,3 +1,4 @@
+alert("What?");
 const button = document.getElementById("name_button");
 button.addEventListener("click", AcceptName);
 
