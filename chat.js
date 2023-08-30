@@ -1,3 +1,3 @@
 const button = document.getElementById("hello");
-
-button.getAttribute("hidden");
+button.addEventListener("click", AcceptName);
+//button.getAttribute("hidden");
