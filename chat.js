@@ -1,8 +1,10 @@
-alert("What?");
-const button = document.getElementById("name_button");
+
+const button.getElementById("name_button");
 button.addEventListener("click", AcceptName);
 
 function AcceptName() {
-  button.getAttribute("hidden");
-  
+  name_div = document.getElementById("hello");
+  name_input = document.getElementById("name");
+  name_div.setAttribute("hidden", "hidden");
+  user_name=name_input.value;
 }
