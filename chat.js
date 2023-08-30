@@ -1,4 +1,4 @@
-const button.getElementById("name_button");
+const button=document.getElementById("name_button");
 button.addEventListener("click", AcceptName);
 
 function AcceptName() {
