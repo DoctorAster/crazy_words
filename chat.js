@@ -1,4 +1,3 @@
-
 const button.getElementById("name_button");
 button.addEventListener("click", AcceptName);
 
@@ -12,6 +11,4 @@ function AcceptName() {
     hello_name.innerText="Приветствуем Вас, " + user_name;
     hello_name_div.removeAttribute("hidden");
     check_text=hello_name.innerText;
-
 }
-
