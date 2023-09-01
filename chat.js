@@ -29,5 +29,6 @@ function SendMessage () {
     message = document.getElementById("message").value;
     document.getElementById("message").value = "";
     console.log(message);
-    
+    chat_area=document.getElementById("chat_area");
+    chat_area.value=message + '\r\n' + chat_area.value;
     }
