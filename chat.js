@@ -1,5 +1,8 @@
 const button=document.getElementById("name_button");
+const snd_button = document.getElementById("send_button");
+
 button.addEventListener("click", AcceptName);
+snd_button.addEventListener("click", SendMessage);
 
 function AcceptName() {
     hello_div = document.getElementById("hello");
@@ -16,5 +19,8 @@ function AcceptName() {
     hello_name_div.removeAttribute("hidden");
     check_text=hello_name.innerText;
     }
+function SendMessage () {
+    message = document.getElementById("message").value;
+    document.getElementById("message").value = "";
     
 }
