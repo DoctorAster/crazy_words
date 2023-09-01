@@ -1,3 +1,4 @@
+var user_name = "";
 const button=document.getElementById("name_button");
 const snd_button = document.getElementById("send_button");
 
@@ -28,7 +29,8 @@ function AcceptName() {
 function SendMessage () {
     message = document.getElementById("message").value;
     document.getElementById("message").value = "";
-    console.log(message);
+    name_message = user_name + ": " + message;
+    console.log(name_message);
     chat_area=document.getElementById("chat_area");
-    chat_area.value=message + '\r\n' + chat_area.value;
+    chat_area.value=name_message + '\r\n' + chat_area.value;
     }
