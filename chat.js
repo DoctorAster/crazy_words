@@ -28,9 +28,17 @@ function AcceptName() {
     }  
 function SendMessage () {
     message = document.getElementById("message").value;
-    document.getElementById("message").value = "";
+    //document.getElementById("message").value = "";
     name_message = user_name + ": " + message;
     console.log(name_message);
+    (async () => {
+                var response = await fetch('chat.php?message=' + name_message);
+                var answer = await response.text();
+                document.getElementById('message').value = '';
+            }
+        )();
+    /*
     chat_area=document.getElementById("chat_area");
     chat_area.value=name_message + '\r\n' + chat_area.value;
+    */
     }
