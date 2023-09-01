@@ -5,6 +5,9 @@ const snd_button = document.getElementById("send_button");
 button.addEventListener("click", AcceptName);
 snd_button.addEventListener("click", SendMessage);
 
+get();
+setInterval(get, 2000)
+
 function AcceptName() {
     name_input = document.getElementById("name");
     user_name=name_input.value;
@@ -42,3 +45,12 @@ function SendMessage () {
     chat_area.value=name_message + '\r\n' + chat_area.value;
     */
     }
+
+function get() {
+    (async () => {
+                var response = await fetch('chat.php');
+                var answer = await response.text();
+                document.getElementById('chat_area').value = answer;
+            }
+        )();
+}
