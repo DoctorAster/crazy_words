@@ -28,5 +28,6 @@ function AcceptName() {
 function SendMessage () {
     message = document.getElementById("message").value;
     document.getElementById("message").value = "";
+    console.log(message);
     
     }
