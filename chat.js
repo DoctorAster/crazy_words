@@ -4,9 +4,10 @@ const snd_button = document.getElementById("send_button");
 
 button.addEventListener("click", AcceptName);
 snd_button.addEventListener("click", SendMessage);
-
+/*
 get();
 setInterval(get, 2000)
+*/
 
 function AcceptName() {
     name_input = document.getElementById("name");
@@ -40,12 +41,12 @@ function SendMessage () {
                 document.getElementById('message').value = '';
             }
         )();
-    /*
+    
     chat_area=document.getElementById("chat_area");
     chat_area.value=name_message + '\r\n' + chat_area.value;
-    */
+    
     }
-
+/*
 function get() {
     (async () => {
                 var response = await fetch('chat.php');
@@ -54,3 +55,4 @@ function get() {
             }
         )();
 }
+*/
